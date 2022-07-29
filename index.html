@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Etch-a-Sketch</title>
+        <link rel="stylesheet" href="./style.css "> 
+    </head>
+    <body>
+        <div class="main">
+            <h1>Etch-A-Sketch!</h1>
+            <div class="sketchArea">
+                <div class="controls">
+                    <div class="resolution">
+                        <h3>Grid Size</h3>
+                        <form class="resizer">
+                            <input type="text" name="Value" placeholder="16">
+                           <button>Resize</button>
+                        </form>
+                    </div>
+                    <div class="color">
+                        <h3>Color</h3>
+                        <div class="radioContainer">
+                            <input class="radioOption" value="0" type="radio" name="color" checked="checked"><span>black</span>
+                        </div>
+                        <div class="radioContainer">
+                            <input class="radioOption" value="1" type="radio" name="color"><span>rainbow</span>
+                        </div>
+                        <div class="radioContainer">
+                            <input class="radioOption" value="2" type="radio" name="color"><span>custom</span>
+                            <input class="colorWheel" value="#000000" type="color" name="color">
+                        </div>
+                    </div>
+                    <button class="clearButton">Clear</button>
+                </div>
+                <div class="playGrid"></div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
